@@ -9,12 +9,12 @@ img {
 }
 body {
   font-family: url(Norse-Bold.otf);
-
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 .hero {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,11 +25,12 @@ body {
   background-position: center;
 }
 .hero__logo {
+  position: absolute;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2.75rem;
+  top: 2.5rem;
   padding: 0.3rem;
   background: gray 0.5;
   background-color: hsla(0, 0%, 0%, 0.405);
@@ -60,8 +61,8 @@ body {
 .section-one__p {
   margin-bottom: 1rem;
   font-size: 20px;
-  font-style: italic;
-  font-weight: medium;
+  font-style: normal;
+  font-weight: 600;
 }
 .section-two {
   display: grid;
@@ -78,7 +79,7 @@ body {
   margin-bottom: 1rem;
 }
 form {
-  width: 100vw;
+  width: 90vw;
   padding: 2rem;
 }
 input {
@@ -129,4 +130,96 @@ input:active {
   font-size: 18px;
   cursor: pointer;
   color: hsla(92, 20%, 35%, 0.771);
+}
+@media screen and (min-width: 576px) {
+  body {
+    flex-direction: row;
+    min-height: 100vh;
+  }
+  .hero {
+    width: 30vw;
+    min-height: 110vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+  .hero__logo {
+    top: 6rem;
+  }
+  .main {
+    width: 70vw;
+  }
+  .section-one {
+    text-align: start;
+    padding: 6rem 6rem 1rem 1rem;
+  }
+  .section-two {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .section-two__h2 {
+    text-align: start;
+    padding-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    gap: 1rem;
+    padding: 0 1rem 0 1rem;
+  }
+  .form-element {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    gap: 1rem;
+    width: min(25vw, 220px);
+  }
+
+  label {
+    font-size: 14px;
+  }
+  .btn-container {
+    width: 100%;
+  }
+  .btn {
+    width: min(25vw, 220px);
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .btn-container p {
+    text-align: start;
+  }
+}
+@media screen and (min-width: 768px) {
+  .form-element {
+    width: min(30vw, 250px);
+  }
+  label {
+    font-size: 1rem;
+  }
+  .btn {
+    width: min(30vw, 250px);
+  }
+}
+@media screen and (min-width: 992px) {
+  .form-element {
+    width: min(35vw, 250px);
+  }
+  .btn {
+    width: min(35vw, 250px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-element {
+    width: min(40vw, 300px);
+  }
+  .btn {
+    width: min(40vw, 300px);
+  }
 }
