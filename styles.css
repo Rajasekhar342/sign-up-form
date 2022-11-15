@@ -40,7 +40,19 @@ body {
 .hero__header {
   font-size: 40px;
 }
+.main {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.nowrap {
+  white-space: no-wrap;
+}
 .section-one {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
   background-color: whitesmoke;
   padding: 2rem;
 }
@@ -49,4 +61,19 @@ body {
   font-size: 20px;
   font-style: italic;
   font-weight: medium;
+}
+.section-two {
+  display: grid;
+  place-content: center;
+  padding: 2rem;
+}
+.section-two__h2 {
+  margin-bottom: 1rem;
+}
+.form-element {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  width: 400px;
 }

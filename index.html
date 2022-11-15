@@ -19,16 +19,71 @@
         <h1 class="hero__header">ODIN</h1>
       </div>
     </hero>
-    <section class="section-one">
-      <p class="section-one__p">
-        This is not a real online service! You know you need something like this
-        in your life to help you realize your deepest dreams.
-        <span class="nowrap">Sign up now to get started.</span>
-      </p>
-      <p class="section-one__p">You know you want to.</p>
-    </section>
-    <section class="section__two">
-      <h2 class="section-two__h2">Let's do this!</h2>
-    </section>
+    <main class="main">
+      <section class="section-one">
+        <p class="section-one__p">
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams.
+          <span class="nowrap">Sign up now to get started.</span>
+        </p>
+        <p class="section-one__p">You know you want to.</p>
+      </section>
+      <section class="section-two">
+        <h2 class="section-two__h2">Let's do this!</h2>
+        <form action="" method="post" class="section-two__form">
+          <div class="form-element">
+            <label for="firstname">FIRST NAME</label>
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              placeholder="John"
+            />
+          </div>
+          <div class="form-element">
+            <label for="lastname">LAST NAME</label>
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Doe"
+            />
+          </div>
+          <div class="form-element">
+            <label for="email">EMAIL</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="john@email.com"
+            />
+          </div>
+          <div class="form-element">
+            <label for="phone">PHONE NUMBER</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              pattern="555-555-5555"
+              placeholder="123-456-7890"
+            />
+          </div>
+          <div class="form-element">
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="form-element">
+            <label for="confirm-password">PASSWORD</label>
+            <input
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+            />
+          </div>
+          <button class="btn" type="submit">Create Account</button>
+          <p>Already have an account?<span class="nowrap">Log in</span></p>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
