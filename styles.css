@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +9,6 @@ img {
   height: auto;
 }
 body {
-  font-family: url(Norse-Bold.otf);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -30,17 +30,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 2.5rem;
+  top: 2.2rem;
   padding: 0.3rem;
   background: gray 0.5;
   background-color: hsla(0, 0%, 0%, 0.405);
 }
+
 .hero img {
   width: 50px;
 }
 .hero__header {
   font-size: 40px;
   color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 .main {
   width: 100%;
@@ -68,6 +70,7 @@ body {
   display: grid;
   place-content: center;
   padding: 2rem;
+  background-color: white;
 }
 .section-two__h2 {
   margin-bottom: 1rem;
@@ -78,6 +81,7 @@ body {
   flex-direction: column;
   margin-bottom: 1rem;
 }
+
 form {
   width: 90vw;
   padding: 2rem;
@@ -107,6 +111,8 @@ input:active {
   box-shadow: 0 0 0 gray;
   padding-top: 1rem;
   gap: 0.3rem;
+
+  width: 100%;
 }
 .btn {
   padding: 0.8rem;
@@ -138,20 +144,20 @@ input:active {
   }
   .hero {
     width: 30vw;
-    min-height: 110vh;
+    min-height: 120vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
   }
   .hero__logo {
-    top: 6rem;
+    top: 8rem;
   }
   .main {
     width: 70vw;
   }
   .section-one {
     text-align: start;
-    padding: 6rem 6rem 1rem 1rem;
+    padding: 8rem 6rem 2rem 2rem;
   }
   .section-two {
     display: flex;
@@ -161,7 +167,7 @@ input:active {
   }
   .section-two__h2 {
     text-align: start;
-    padding-left: 1rem;
+    padding-left: 2rem;
     margin-top: 1rem;
     margin-bottom: 1.5rem;
   }
@@ -171,7 +177,7 @@ input:active {
     flex-direction: row;
     flex-flow: wrap;
     gap: 1rem;
-    padding: 0 1rem 0 1rem;
+    padding: 0 2rem 0 2rem;
   }
   .form-element {
     display: flex;
@@ -185,7 +191,7 @@ input:active {
     font-size: 14px;
   }
   .btn-container {
-    width: 100%;
+    width: 70vw;
   }
   .btn {
     width: min(25vw, 220px);
@@ -198,7 +204,7 @@ input:active {
 }
 @media screen and (min-width: 768px) {
   .form-element {
-    width: min(30vw, 250px);
+    width: min(27vw, 250px);
   }
   label {
     font-size: 1rem;
@@ -217,9 +223,9 @@ input:active {
 }
 @media screen and (min-width: 1200px) {
   .form-element {
-    width: min(40vw, 300px);
+    width: min(40vw, 320px);
   }
   .btn {
-    width: min(40vw, 300px);
+    width: min(40vw, 320px);
   }
 }
